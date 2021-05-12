@@ -1,0 +1,44 @@
+.subscribe {
+  margin: 0 auto 5rem;
+}
+
+.aboButton {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.pricing {
+  color: black;
+  font-weight: bold;
+  margin-left: 80%;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.text_formule {
+  font-size: 2rem;
+}
+
+.subscribe__imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  background-image: url('https://cdn.pixabay.com/photo/2014/10/22/16/38/ingredients-498199_960_720.jpg');
+  margin: 3rem auto;
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+.subscribe__title {
+  text-transform: uppercase;
+  text-shadow: 4px 2px 8px rgba(10,1,15,0.83);
+  color: white;
+  font-size: 3rem;
+}
+

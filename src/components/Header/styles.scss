@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem 3rem;
+    &__logo {
+      flex-grow: 1;
+        &__img{
+            width: 150px;
+        }
+    }
+}
+
+.ui.visible.right.overlay.sidebar, .animating.ui.overlay.sidebar, .ui.right.visible.sidebar {
+  position: absolute;
+  top: 9rem;
+  width: 100%;
+  padding-top: 2rem;
+  background-color: #ffffffeb;
+  -webkit-box-shadow: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.sidebar-container {
+  position: relative;
+}
+
+.sidebar-checkbox {
+  position: absolute;
+  z-index: 99;
+  opacity: 0;
+}
+
+.sidebar-closed, .sidebar-open {
+  position: absolute;
+  z-index: 1;
+  right: -7px;
+}
+
+@media (max-width: 760px) {
+  .ui.labeled.icon.menu .item {
+    font-size: 1.2rem;
+    color: black;
+  }
+}

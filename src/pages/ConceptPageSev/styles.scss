@@ -1,0 +1,119 @@
+.concept__imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  background-image: url('/src/assets/images/IllustrationsConcept/pexels-cottonbro-3927238.jpg');
+  margin: 3rem auto;
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50%;
+  padding: 0;
+}
+
+.concept__title {
+  text-transform: uppercase;
+  text-shadow: 4px 2px 8px rgba(10,1,15,0.83);
+  color: white;
+  font-size: 3rem;
+}
+
+.concept {
+  margin-bottom: 5rem;
+
+  &-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+  }
+
+  &-image {
+  width: 80%;
+  margin: 0 auto;
+  }
+
+  &-image--mobile {
+  width: 50%;
+  margin: 0 auto;
+  }
+}
+
+.navformule {
+  width: 90%;
+  margin: 0 auto;
+}
+
+// Images alignment
+.align-right {
+  margin: 0 0 0 auto;
+}
+
+.align-left {
+  margin: 0 auto 0 0;
+}
+
+button {
+  background-color: #80003F;
+  color: white;
+  font-weight: 100;
+  border: none;
+  border-radius: 5px ;
+  padding: 0.5rem 1rem;
+  margin: 2rem auto 0;
+  &:hover {
+      background-color: black;
+      color: white;
+  }
+}
+
+.button-link {
+  display: flex;
+}
+
+//Responsive Design
+
+@media (max-width: 1180px) {
+  .concept__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .concept__title {
+    font-size: 2.5rem;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .concept__title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 598px) {
+  .concept__imageContainer {
+      padding: 0 5rem;
+  }
+}
+
+@media only screen and (max-width: 1199px){
+  .ui.container {
+      width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .ui.grid {
+    display: flex;
+    flex-direction: column-reverse
+  }
+}
+
+@media only screen and (orientation : portrait) and (max-width: 1024px){
+.concept__imageContainer {
+    background-position: bottom;
+}
+}

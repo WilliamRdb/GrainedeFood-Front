@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+
+.ui.input>input {
+    border:none;
+    appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    padding: 1rem 0;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc;
+    &:focus{
+        color:#222;
+        font-weight: bold;
+        border-bottom: 2px solid #222;
+        transition: border 0.1s ease;
+        &::placeholder{
+            color: #222;
+            transition: color 0.5s ease;
+        }
+    }
+}
+.loginpage {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    &__signin {
+        margin: 0 auto 5rem;
+        padding: 2rem 20rem;
+        border-radius: 10px;
+        box-shadow: 0px 5px 93px -6px rgba(136,135,135,0.52);
+        &__input {
+            margin-bottom: 3rem;
+            display: flex;
+            flex-direction: column;
+            &__content {
+                border:none;
+                margin-bottom: 1rem;
+            }
+        }
+        &__button {
+            background-color: #80003F;
+            color: white;
+            font-weight: 100;
+            border: none;
+            border-radius: 5px ;
+            padding: 0.5rem 1rem;
+            margin-right: 1rem;
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+        &__title {
+            font-family: 'DM Serif Text', serif ;
+        }
+    }
+    &__signup {
+        margin: 0 auto 5rem;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 20rem;
+        border-radius: 10px;
+        box-shadow: 0px 5px 93px -6px rgba(136,135,135,0.52);
+        &__input {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3rem;
+            &__content{
+                margin-bottom: 1rem;
+            }
+        }
+        &__button{
+            background-color: #80003F;
+            color: white;
+            font-weight: 100;
+            border: none;
+            border-radius: 5px ;
+            padding: 0.5rem 1rem;
+            margin-right: 1rem;
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        
+        }
+        &__title {
+            font-family: 'DM Serif Text', serif ;
+        }
+    }
+    &__options {
+        &__checkbox {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            &__content {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+span {
+    cursor: pointer;
+    color: #80003F;
+}

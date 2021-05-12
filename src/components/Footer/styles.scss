@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer__social, .footer__menu {
+      margin: 0 2rem;
+
+      i.icon:before {
+        color:#80003F;
+      }
+    }
+}
+  .ui.secondary.pointing.menu .item:hover {
+    font-weight: 600;
+    color:#80003F;
+  }
+
+  .ui.secondary.menu .active.item {
+    font-weight: 600;
+    color:#80003F;
+  }
+
+
+.current_year {
+  color: black;
+}
+/* Responsive Design*/
+
+@media (max-width: 900px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer .footer__menu, .footer .footer__social {
+    margin: 0 2rem 2rem;
+  }
+
+  .Legal_Text {
+    padding: 0 2rem;
+  }
+}
+

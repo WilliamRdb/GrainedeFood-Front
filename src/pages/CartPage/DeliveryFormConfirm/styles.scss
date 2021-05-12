@@ -1,0 +1,10 @@
+.deliveryFormConfirm{
+  margin-top : 4rem;
+  &__modifier{
+    display: flex;
+    justify-content: space-between; 
+      &__adress{
+      padding:0 2rem ;
+    }
+  }
+}

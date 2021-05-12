@@ -1,0 +1,202 @@
+// Top image of the homepage
+
+.homepage__imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  background-image: url('/src/assets/images/IllustrationsHomepage/pexels-alexy-almond-3757999.jpg');
+  margin: 3rem auto;
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 40%;
+  padding: 0;
+}
+
+.homepage__title {
+  text-transform: uppercase;
+  text-shadow: 4px 2px 8px rgba(10,1,15,0.83);
+  color: white;
+  font-size: 3rem;
+}
+
+.centered {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.h3 {
+  margin-top: 1rem;
+}
+
+.homepage__selling-points {
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem auto;
+  flex-wrap: wrap;
+  width: 70%;
+
+  &--item {
+    width: 33%;
+    padding: 0 2rem;
+  }
+}
+
+// Presentation of the client
+
+.presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+}
+
+.margin-auto {
+  margin: 0 3rem 0 auto;
+}
+
+.actus {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3rem auto;
+}
+
+// Semantic UI card styling
+
+.ui.card>.image>img, .ui.cards>.card>.image>img {
+    height: 362px;
+    object-fit: cover;
+}
+
+.ui.card {
+    margin: 0;
+}
+
+.header {
+  padding: 1rem 2rem;
+}
+
+.input__newsletter {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto 5rem auto;
+}
+
+/*RESPONSIVE HOMEPAGE*/
+
+/*@media (max-width: 1350px) {
+  .homepage__imageContainer {
+    padding: 0 17.6rem;
+  }
+}
+
+@media (max-width: 1222px) {
+  .homepage__imageContainer {
+    padding: 0 13rem;
+  }
+}*/
+
+@media (max-width: 1090px) {
+  .homepage__imageContainer {
+    padding: 0 8.3rem;
+  }
+  .presentation {
+    margin: 0 1rem;
+    flex-direction: column-reverse;
+  }
+  .margin-auto {
+    margin: 0 0 5rem;
+  }
+}
+
+@media (max-width: 1030px) {
+  .homepage__selling-points {
+    width: 100%;
+  }
+  .homepage__imageContainer {
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  .actus {
+    flex-direction: column;
+  }
+  .ui.card {
+      margin: 0 auto 2rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .homepage__imageContainer {
+    padding: 0 3.6rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .homepage__imageContainer {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+  .homepage__title {
+      font-size: 2.5rem;
+      padding: 0 5rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .homepage__imageContainer {
+    padding: 0 7.6rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .homepage__selling-points--item {
+    width: 100%;
+    margin: 0 auto 3rem
+  }
+  .homepage__selling-points {
+      margin: 3rem auto 0;
+  }
+}
+
+@media (max-width: 555px) {
+  .homepage__title {
+      font-size: 2.2rem;
+  }
+  .presentation {
+    margin: 0;
+  }
+  .ui.medium.image {
+    width: 70%;
+  }
+  .ui.input {
+    flex-direction: column;
+  }
+  .input__newsletter {
+    margin: 1rem auto 5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .homepage__title {
+      font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 360px) {
+  button {
+    padding: 0.5rem 3.5rem;
+  }
+}
+
+
